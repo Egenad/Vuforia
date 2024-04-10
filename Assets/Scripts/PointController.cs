@@ -10,7 +10,7 @@ public class PointController : MonoBehaviour
 
     private Vector3 pos = Vector3.zero;
 
-    public Camera camera;
+    public Camera cam;
 
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class PointController : MonoBehaviour
                 }
             #endif
                 if(isPressed) {
-                    Ray ray = camera.ScreenPointToRay(pos);
+                    Ray ray = cam.ScreenPointToRay(pos);
                     RaycastHit hit;
                     if(Physics.Raycast(ray, out hit)) {
                         point.SetActive(true);

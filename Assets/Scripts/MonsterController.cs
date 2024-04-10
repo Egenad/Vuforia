@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class MonsterController : MonoBehaviour{
 
-    public Camera camera;
+    public Camera cam;
     public NavMeshAgent agent;
 
     private bool isPressed = false;
@@ -36,7 +36,7 @@ public class MonsterController : MonoBehaviour{
             }
         #endif
             if(isPressed) {
-                Ray ray = camera.ScreenPointToRay(pos);
+                Ray ray = cam.ScreenPointToRay(pos);
                 RaycastHit hit;
                 if(Physics.Raycast(ray, out hit)) {
                     agent.SetDestination(hit.point);

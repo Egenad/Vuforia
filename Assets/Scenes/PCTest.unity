@@ -377,7 +377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1333aa1831ed57147b929d019e9da9df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 568284719}
+  cam: {fileID: 568284719}
   agent: {fileID: 250836773}
 --- !u!82 &250836778
 AudioSource:
@@ -390,7 +390,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cc0350e8e8e43664f9a1e4db2177eb3b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -729,7 +729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: {fileID: 1566181460}
-  camera: {fileID: 568284719}
+  cam: {fileID: 568284719}
 --- !u!1001 &1104638870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -868,7 +868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1333aa1831ed57147b929d019e9da9df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 568284719}
+  cam: {fileID: 568284719}
   agent: {fileID: 1104638874}
 --- !u!195 &1104638874
 NavMeshAgent:
@@ -933,7 +933,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cc0350e8e8e43664f9a1e4db2177eb3b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1094,7 +1094,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566181460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.23854756, y: 0.04, z: 3.1312904}
+  m_LocalPosition: {x: -0.23854756, y: -4.89, z: 3.1312904}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1195,7 +1195,6 @@ GameObject:
   - component: {fileID: 1744068482}
   - component: {fileID: 1744068481}
   - component: {fileID: 1744068480}
-  - component: {fileID: 1744068479}
   - component: {fileID: 1744068478}
   m_Layer: 0
   m_Name: Obstacle
@@ -1218,20 +1217,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   point1: {fileID: 252990782}
   point2: {fileID: 1389659724}
---- !u!114 &1744068479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744068477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23e97650d6f67934b9facf5c18db64fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  point1: {fileID: 0}
-  point2: {fileID: 0}
 --- !u!208 &1744068480
 NavMeshObstacle:
   m_ObjectHideFlags: 0
